@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitnessClub.com</title>
+    <link rel="stylesheet" href="gym.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Kalam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto Slab">
+    <style>
+        /* CSS reset */
+        body {
+        margin: 0px;
+        padding: 0px;
+        background-image: url(gymBG.png);
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        
+        }
+        .left{
+        /* border: 2px solid black; */
+        display: inline-block;
+        position: absolute;
+        left: 15px;;
+        top: 20px;
+        padding: 5px;
+        }
+        .mid{
+            /* border: 2px solid blue; */
+            display: block;
+            margin: 20px auto;
+            width: 38%;
+            background-color: #b2a8a8;;
+        }
+        .right{
+            /* border: 2px solid green; */
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 15px;
+        }
+        .navBar li a{
+            text-decoration: none;
+            padding: 14px;
+            background-color: #b2a8a8;;
+            font-family: Roboto Slab;
+        }
+        .navBar{
+            display: inline-block;
+        }
+        .navBar li{
+            display: inline-block;
+            font-size: 20px;
+        }
+        .navBar li a:hover,.btn:hover{
+            background-color: antiquewhite;
+            color: black;
+        }
+        .left img{
+            width: 70px;
+            display: block;
+            border-radius: 100px;
+            margin: auto;
+        }
+        #logo_heading{
+            font-family: Kalam;
+            font-size: 20px;
+        }
+        .btn{
+            margin: 5px;
+            padding: 4px;
+            background-color: rgba(18, 2, 2, 0.896);
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: Kalam;
+        }
+        .container{
+            border: 2px solid black;
+            float: right;
+            margin: 60px 95px;
+            padding: 20px;
+            width: 36%;
+            border-radius: 10px;
+            font-size: 20px;
+            background-color: rgb(192, 211, 226);
+        }
+        h3{
+            text-align: center;
+        }
+        .box{
+            border: 2px solid black;
+            border-radius: 8px;
+            margin: 5px;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="headerClass">
+        <div class="left">
+            <img src="gymLogo2.png" alt="">
+            <div id="logo_heading">Fitness Club</div>
+        </div>
+        <div class="mid">
+            <ul class="navBar">
+                <li><a href="" class = "active">Home</a></li>
+                <li><a href="" class = "active">About Us</a></li>
+                <li><a href="" class = "active">Fitness Calculator</a></li>
+                <li><a href="" class = "active">Contact</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Call</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Are you ready to get FIT, STRONG & MOTIVATED !!</h3>
+        <p>Register now</p>
+        <form action="noaction.php"></form>
+        <div class="form_group">
+            <div class="input">
+                Name<input type="text" class = "box" name="" placeholder="Enter your name here">
+            </div>
+            <div class="input">
+                Age <input type="number" name="" class = "box" placeholder="Enter your age here">
+            </div>
+            <div class="input">
+                Address <input type="text" name="" class = "box" placeholder="Enter your address here">
+            </div>
+            <div class="input">
+                Date of Birth <input type="date" class = "box" name="" placeholder="Enter your dob here">
+            </div>
+            <div class="input">
+                Contact number<input type="text" name="" class = "box" placeholder="Enter your contact no. here">
+            </div>
+            <div class="input">
+                Email <input type="email" name="" class = "box" placeholder="Enter your email here">
+            </div>
+            <div class="input">
+                <span>Gender :  </span>
+                Male<input type="radio" name="" class = "box" >
+                Female<input type="radio" name="" class="box">
+                Others<input type="radio" name="" class="box">
+            </div>
+            <button class="btn">
+                <input type="submit" name="">
+            </button>
+            <button class="btn">
+                <input type="reset" name="">
+            </button>
+        </div>
+    </div>
+</body>
+</html>
